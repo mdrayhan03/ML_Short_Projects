@@ -50,6 +50,11 @@ pip install scikit-learn pandas joblib
 ```bash
 python spam_classifier.py
 ```
+3. Input any email content when prompted:
+```text
+Enter your mail: Congratulations, you’ve won a free ticket!
+Your email is spam
+```
 ## 📈 Accuracy
 
 Achieved an accuracy score of:
