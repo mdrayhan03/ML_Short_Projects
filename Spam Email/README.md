@@ -40,3 +40,63 @@ Make sure you have Python installed. Then install dependencies:
 
 ```bash
 pip install scikit-learn pandas joblib
+```
+
+### 6. How to Run
+
+**Markdown code:**
+
+```markdown
+## 🛠️ How to Run
+
+1. Place your dataset in the same directory as `email.csv`.
+
+2. Run the script:
+
+```bash
+python spam_classifier.py
+```
+
+**Text:**  
+Step-by-step guide to run the spam classifier and test it interactively.
+
+---
+
+### 7. Accuracy
+
+**Markdown code:**
+
+```markdown
+## 📈 Accuracy
+
+Achieved an accuracy score of:
+
+```text
+Accuracy Score: 97.34%
+```
+
+**Text:**  
+Shows the model’s performance metric.
+
+---
+
+### 8. Saved Files
+
+**Markdown code:**
+
+```markdown
+## 💾 Saved Files
+
+- `spam_logistic_model.pkl`: Trained model  
+- `vectorize_x_data.pkl`: TF-IDF vectorizer  
+
+You can use these files later to make predictions without retraining.
+```
+## 📬 Sample Prediction Function
+
+```python
+def real_predict(text):
+    vect_text = vector.transform([text])
+    predict = load_model.predict(vect_text)
+    print(f"Your email is {'not spam' if predict[0] == 'ham' else 'spam'}")
+```
